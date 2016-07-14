@@ -6,7 +6,6 @@ while i < 4:
     forward(10,.5)
     backward(10,.5)
     i = i + 1
-motors(1,0)
 
 
        
