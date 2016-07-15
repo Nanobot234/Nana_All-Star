@@ -1,7 +1,7 @@
 from Myro import *
 from Graphics import *
 from random import *
-
+userInput = input("Which color do you want (1. Red) (2.Green) (3. Blue) (4.Yellow)") 
 width = 500
 height = 500
 sim = Simulation("Maze World", width, height, Color("purple"))
@@ -100,8 +100,7 @@ degree = 10
 pic = takePicture()
 width = getWidth(pic)
 #keep turning 
-def findRandomBlob():
-    LOOKING_FOR = randint(1,4)
+def findBlob(LOOKING_FOR):
     print(LOOKING_FOR)
     pic = takePicture()
     while findColorSpot(pic, LOOKING_FOR) == 0:
@@ -116,11 +115,12 @@ def findRandomBlob():
         while findColorSpot(pic, LOOKING_FOR) > width/2:
             turnBy(-degree)
             pic = takePicture()
-      #moves torward the object  
-    forward(1, 4)
-    pic = takePicture()
+ 
+     #moves torward the object  
+    while findColorSpot(takePicture(),LOOKING_FOR) != -1:
+        forward(1,1)
     
-findRandomBlob()
 
+findBlob(int(userInput))
     
  
