@@ -44,7 +44,7 @@ def draw():
          y = y + speed
          y -= 1
         #x += 1
-        elif ydir == False:
+    elif ydir == False:
         y = y - speed
         y += 1
         
@@ -54,7 +54,7 @@ def draw():
             y += 1 
     '''
     #bouncing off
-    '''
+    
     if y == 680:
         while mouseX - 100 < x < mouseX + 100:
             ydir == False
@@ -64,17 +64,17 @@ def draw():
         if ydir == False:
             y  = y - speed
             y -= 1 
-    '''
-        
-        
-    #if y == 680:
-        #if mouseX - 40  < x < mouseX + 100:
-         #   y += 1
     
-    '''
+        
+        
+    if y == 680:
+        if mouseX - 40  < x < mouseX + 100:
+            y += 1
+    
+    
     if y == 680 and mouseX < x < mouseX + 100:
         ydir = False
-    '''
+    
     rect(mouseX ,680 ,100,-20)
     fill(randrange(255),randrange(255),randrange(255))
     ellipse(x,y,35,45)

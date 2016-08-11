@@ -1,0 +1,3 @@
+var url = "http://maps.googleapis.com/maps/api/staticmap?center=2350+Ryer+Avenue&zoom=13&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=icon:http://maps.googleapis.com/maps/api/staticmap?center=Albany,+NY&zoom=13&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=icon:http://megaicons.net/static/img/icons_sizes/388/1147/64/150-mewtwo-icon.png%7Cshadow:true%7CAlbany,+NY%7Cshadow:true%7CBronx,+NY";
+var marketStar = "&markers=icon:https://encrypted-tbn1.gstatic.com/images?q=t"
+var mewtwo = 

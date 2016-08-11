@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Simple Messaging</title>
+</head>
+<body>
+<input placeholder="first Name" type="text" id="first">
+<input placeholder="last Name"  type="text" id="last">
+<button onclick="getData()" id="get_data">Return Data</button>
+<button onclick="sendMessage()" id="btn">Submit</button>
+
+<div id="database_msg"></div>
+
+<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDaooktQvrT-3Wt6q5hMtdOcq7cSU5b8OI",
+    authDomain: "mlbsquad-25551.firebaseapp.com",
+    databaseURL: "https://mlbsquad-25551.firebaseio.com",
+    storageBucket: "mlbsquad-25551.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="chat.js"></script>
+
+</body>
+</html>
+
+
