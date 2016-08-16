@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class RestaurantsPageActivity extends AppCompatActivity {
@@ -14,7 +13,7 @@ public class RestaurantsPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurants_page);
 
-        final Button BigBtn = (Button) findViewById(R.id.But4);
+        //final Button BigBtn = (Button) findViewById(R.id.But4);
 /*
         BigBtn.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -34,6 +33,15 @@ public class RestaurantsPageActivity extends AppCompatActivity {
 
             }
         });
+
+        final TextView SmallText = (TextView) findViewById(R.id.TextViewT);
+        SmallText.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(RestaurantsPageActivity.this,BarOneActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
     }

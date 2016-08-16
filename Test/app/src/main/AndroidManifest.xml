@@ -41,7 +41,8 @@
         <activity android:name=".BudgetActivity" />
         <activity android:name=".RestaurantsPageActivity" />
         <activity android:name=".RestaurantsInfoActivity" />
-        <activity android:name=".BarSelectionActivity"></activity>
+        <activity android:name=".BarOneActivity" />
+        <activity android:name=".OutbackActivity"></activity>
     </application>
 
 </manifest>

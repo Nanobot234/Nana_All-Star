@@ -8,14 +8,14 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:background="@drawable/barbecue"
+
     tools:context="com.example.olaoluwaolejede.test.FoodPlaceActivity">
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Restaurants"
-        android:id="@+id/checkBox"
+        android:id="@+id/ResCheckBox"
         android:height="50dp"
         android:width="200dp"
         android:layout_marginLeft="37dp"
@@ -32,8 +32,8 @@
         android:text="Bars"
         android:id="@+id/checkBox2"
         android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/checkBox"
-        android:layout_alignStart="@+id/checkBox"
+        android:layout_alignLeft="@+id/ResCheckBox"
+        android:layout_alignStart="@+id/ResCheckBox"
         android:width="200dp"
         android:height="50dp"
         android:checked="false" />
@@ -55,16 +55,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Where would you you like to go?"
+        android:text="Your budget is: $"
         android:id="@+id/textView11"
-        android:layout_alignLeft="@+id/checkBox"
-        android:layout_alignStart="@+id/checkBox"
         android:width="250dp"
-        android:height="70dp"
+        android:height="60dp"
         android:textSize="30dp"
+        android:textStyle="bold"
         android:layout_alignParentTop="true"
-        android:textColor="#ffff00"
-        android:textStyle="bold" />
+        android:layout_alignLeft="@+id/ResCheckBox"
+        android:layout_alignStart="@+id/ResCheckBox" />
 
     <Button
         android:layout_width="wrap_content"
@@ -75,4 +74,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="42dp"
         android:background="#D4AF37" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose where you want to go"
+        android:id="@+id/textView9"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignRight="@+id/textView11"
+        android:layout_alignEnd="@+id/textView11" />
 </RelativeLayout>
